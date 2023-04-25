@@ -37,7 +37,7 @@ function Books() {
 
         {/* search functionality */}
         <div className='text-center mt-5px'>
-           <input type='text' value={query} placeholder='Search..'
+           <input type='text' value={query} placeholder='Search.. Title/Author'
            onChange={(event)=>setQuery(event.target.value)} />
           </div>
         <ul>
