@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div >
         <nav className="navbar navbar-expand-lg bg-body-tertiary " >
-  <div className="container">
+  <div className="container bg-primary">
     <a className="navbar-brand" href="/">
       <img src={logo}alt='' width={45} height={45}  ></img>
       BookStore</a>
