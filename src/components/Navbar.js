@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import logo from './images/logo.webp'
 import '../components/Navbar.css'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+// import { useState } from 'react'
 function Navbar() {
   // const [loading, setLoading] = useState(false);
   return (
     <div >
         <nav className="navbar navbar-expand-lg bg-body-tertiary " >
-  <div className="container">
+  <div className="container bg-primary">
     <a className="navbar-brand" href="/">
       <img src={logo}alt='' width={45} height={45}  ></img>
       BookStore</a>
