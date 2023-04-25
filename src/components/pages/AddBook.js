@@ -2,13 +2,14 @@ import React from 'react'
 import Axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import Spinner from '../Spinner'
 
 function AddBook() {
   // const history=useNavigate()
   const [name, setName]=useState("")
   const [author, setAuthor]=useState("")
   const [image, setImage]=useState("")
+  const [isLoading, setIsLoading] = useState(false);
   const navigate=useNavigate()
 
     //  console.log(e.target.name, "Value", e.target.value);
@@ -28,8 +29,10 @@ function AddBook() {
 
   const handleSubmit=async (e)=>{
     e.preventDefault();
+    setIsLoading(true)
     try{
-      const res=await Axios.post("http://localhost:5000/books",{
+       const res=await Axios.post("https://bookstore-3vyz.onrender.com/books",{
+        //const res=await Axios.post("http://localhost:5000/books",{
         name,
         author,
         image,
@@ -50,6 +53,10 @@ function AddBook() {
   }
 
   return (
+
+    <div>
+      {isLoading?(<Spinner/>):(
+
     <form onSubmit={handleSubmit}>
     <div className='bg-dark d-flex justify-content-center align-items-center' style={{minHeight:'91.5vh'}}>
       <div className='container p-4'>
@@ -68,11 +75,13 @@ function AddBook() {
           <input   type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter Image URL"
           value={image} onChange={(e)=>setImage(e.target.value)} />
         </div>
-        <button className='btn btn-primary' type='submit'>Submit</button>
+        <button className='btn btn-primary' type='submit'>AddBook</button>
       </div>
 
     </div>
     </form>
+    )}
+    </div>
   )
 }
 

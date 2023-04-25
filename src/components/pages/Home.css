@@ -3,3 +3,40 @@
     min-height: 91.5vh;
     max-height: auto;
 }
+.footer{
+    margin-top: 5%;
+    background-color: hsl(229, 83%, 62%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.social-icon{
+    margin: 15px 0px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.personal-info{
+    margin-bottom: 15px;
+}
+.personal-info>h6,h4,a{
+    text-align: center;
+}
+.personal-info>p{
+    margin-bottom: auto;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+}
+.viewBook{
+    text-decoration: none;
+    align-content: center;
+}
+.viewBook:hover{
+    text-decoration: none;
+    align-content: center;
+    color: red;
+}

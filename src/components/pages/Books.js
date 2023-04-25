@@ -8,7 +8,8 @@ function Books() {
   const [query, setQuery]=useState("")
    useEffect(()=>{
     const fetchData=async()=>{
-    const response=  await Axios.get('http://localhost:5000/books') 
+   const response=  await Axios.get('https://bookstore-3vyz.onrender.com/books') 
+    //const response=  await Axios.get('http://localhost:5000/books') 
         setData((response.data.books))
       
     }
@@ -35,7 +36,7 @@ function Books() {
        <div>
 
         {/* search functionality */}
-        <div className='text-center mt-5 '>
+        <div className='text-center mt-5px'>
            <input type='text' value={query} placeholder='Search..'
            onChange={(event)=>setQuery(event.target.value)} />
           </div>

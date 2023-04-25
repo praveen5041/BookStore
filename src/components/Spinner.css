@@ -1,0 +1,14 @@
+.spinner {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  
+.spin{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15%;
+}
