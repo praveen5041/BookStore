@@ -1,4 +1,4 @@
-import { Button, Modal } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "./Book.css";

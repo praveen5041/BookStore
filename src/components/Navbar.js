@@ -5,7 +5,7 @@ import '../components/Navbar.css'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 function Navbar() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   return (
     <div >
         <nav className="navbar navbar-expand-lg bg-body-tertiary " >
