@@ -23,7 +23,7 @@ function BookDetails() {
     e.preventDefault();
     setIsLoading(true)
     try{
-      const res=await Axios.put(`https://bookstore-3vyz.onrender.com/books/${id}`,{
+      const res=await Axios.put(`https://booksstore.onrender.com/books/${id}`,{
         //const res=await Axios.put(`http://localhost:5000/books/${id}`,{
         name,
         author,

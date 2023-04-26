@@ -8,7 +8,7 @@ function Books() {
   const [query, setQuery]=useState("")
    useEffect(()=>{
     const fetchData=async()=>{
-   const response=  await Axios.get('https://bookstore-3vyz.onrender.com/books') 
+   const response=  await Axios.get('https://booksstore.onrender.com/books') 
    // const response=  await Axios.get('http://localhost:5000/books') 
         setData((response.data.books))
       

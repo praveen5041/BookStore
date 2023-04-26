@@ -3,25 +3,19 @@ import { Link } from 'react-router-dom'
 import logo from './images/logo.webp'
 import '../components/Navbar.css'
 import { NavLink } from 'react-router-dom'
-<<<<<<< HEAD
-// import AOS from 'aos'
-// import { useState } from 'react'
-=======
-//import { useState } from 'react'
->>>>>>> 94fd619ed6d549b83388cf6f378aeeb692d0fef8
+
 function Navbar() {
   // AOS.init()
   // const [loading, setLoading] = useState(false);
   return (
     <div >
         <nav className="navbar navbar-expand-lg bg-body-tertiary " >
-<<<<<<< HEAD
-  <div className="container ">
+
+   
+    {/* <a className="navbar-brand " href="/"></a> */}
+  <div className="container  ">
     <a className="navbar-brand same" href="/">
-=======
-  <div className="container bg-primary">
-    <a className="navbar-brand" href="/">
->>>>>>> 94fd619ed6d549b83388cf6f378aeeb692d0fef8
+
       <img src={logo}alt='' width={45} height={45}  ></img>
       BookStore</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +60,7 @@ function Navbar() {
        
     </div>
   </div>
+   
 </nav>
     </div>
   )
