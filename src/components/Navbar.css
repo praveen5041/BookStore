@@ -26,3 +26,10 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/* div{
+     background-color: rgb(82, 83, 86); 
+} */
+.same{
+    color:hsl(240, 94%, 50%)
+}
+ 
