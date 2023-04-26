@@ -4,6 +4,7 @@ const book_controler=require('../controlers/Books_control')
 
 
 router.get('/',book_controler.getAllBooks)
+router.get('/admin',book_controler.getBooks)
 //console.log(book_controler.getAllBooks)
 router.post('/',book_controler.addBook)
 // router.get('/:id',book_controler.getById)
